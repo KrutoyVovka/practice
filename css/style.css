@@ -1,0 +1,202 @@
+/*
+&display=swap
+&subset=cyrillic-ext
+*/
+@import url("https://fonts.googleapis.com/css?family=Roboto:regular,700,900&display=swap");
+
+/* -------------------- ОБНУЛЕНИЕ СТИЛЕЙ ----------------------- */
+*,
+*::before,
+*::after {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+
+a,
+a:visited {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+li {
+	list-style: none;
+}
+
+img {
+	vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-size: inherit;
+	font-weight: inherit;
+}
+
+html,
+body {
+	height: 100%;
+}
+
+html {
+	font-size: 16px;
+}
+
+body {
+	line-height: 1;
+	font-family: "Roboto", sans-serif;
+	overflow-x: hidden;
+}
+
+/* ------------------------------ */
+.wrapper {
+	min-height: 100%;
+	/* overflow: hidden; */
+}
+
+/* ------------------------------ */
+._container {
+	max-width: 1040px;
+	padding: 0px 10px;
+	margin: 0px auto;
+	box-sizing: content-box;
+}
+
+._ibg {
+	position: relative;
+}
+
+._ibg img {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	object-fit: cover;
+}
+
+/* ------------------------------ */
+/* - HEADER ----------------- */
+.header {
+	position: absolute;
+	width: 100%;
+	top: 0;
+	left: 0;
+	z-index: 50;
+}
+
+.header__container {}
+
+.header__top {}
+
+.top-header {
+	padding: 26px 0px;
+	display: flex;
+	align-items: center;
+}
+
+.top-header__logo {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	line-height: 41px;
+	font-size: 32px;
+	font-weight: 900;
+	color: #111;
+}
+
+.logo-header {}
+
+.logo-header__icon {}
+
+.logo-header__name {
+	padding: 0px 0px 0px 10px;
+}
+
+.top-header__content {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	padding: 0px 0px 0px 236px;
+}
+
+.top-header__col {
+	display: flex;
+}
+
+.top-header__col:not(:last-child) {
+	margin: 0px 30px 0px 0px;
+}
+
+.item-header {}
+
+.item-header__icon {}
+
+.item-header__body {
+	font-weight: 700;
+	font-size: 12px;
+	line-height: 22px;
+	letter-spacing: 0.15px;
+	color: #111;
+	padding: 0px 0px 0px 10px;
+}
+
+.item-header__name {
+	text-transform: uppercase;
+}
+
+.item-header__text {}
+
+.item-header__btn {}
+
+.item-header__link {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-weight: 700;
+	font-size: 12px;
+	line-height: 24px;
+	text-align: center;
+	letter-spacing: 0.15px;
+	text-transform: uppercase;
+	color: #FFFFFF;
+	background: #F2726F;
+	border-radius: 8px;
+	padding: 9px 35px;
+}
+
+/* -------------------------- */
+.main-page {}
+
+.main-page__container {}
+
+.main-page__body {
+	padding: 100px 0px 0px 0px;
+}
+
+.main-page__title {}
+
+.main-page__text {
+	position: relative;
+	z-index: 2;
+}
+
+.main-page__bg {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+}
+
+.main-page__img {}
+
+._ibg {}
