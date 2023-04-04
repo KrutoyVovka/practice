@@ -1,0 +1,86 @@
+/*
+&display=swap
+&subset=cyrillic-ext
+*/
+/* -------------------- ШРИФТЫ ----------------------- */
+// @import url("https://fonts.googleapis.com/css?family=Roboto:regular,700,900&display=swap");
+
+/* -------------------- ОБНУЛЕНИЕ СТИЛЕЙ ----------------------- */
+@import "_null";
+
+/* -------------------- СТИЛИ ----------------------- */
+body {
+	// background: #333;
+}
+.wrapper {
+	overflow: hidden;
+	background: #f5f5f5;
+	padding: 100px 200px;
+}
+[class*="__container"] {
+	max-width: 1020px;
+	margin: 0 auto;
+}
+
+.titles-block {
+	&:not(:last-child) {
+		margin: 0px 0px 33px 0px;
+	}
+	&__title {
+		background: url('../../img/doggie/icon.svg') 0 -2px no-repeat;
+		padding: 0px 0px 0px 33px;
+		font-weight: 700;
+		font-size: 12px;
+		line-height: 2;
+		letter-spacing: 2.5px;
+		text-transform: uppercase;
+		color: #5D62B5;
+	}
+	&__subtitle {
+		font-weight: 900;
+		font-size: 36px;
+		line-height: 1.17;
+		color: #000000;
+	}
+}
+
+/* promise */
+.promise {
+	&__titles {}
+	&__items {
+		display: flex;
+		margin: 0px -12px;
+		row-gap: 24px;
+		flex-wrap: wrap;
+	}
+	&__item {
+		padding: 0px 12px;
+		flex: 1 1 33.333%;
+	}
+}
+.item-promise {
+	display: flex;
+
+	&__icon {
+		align-self: flex-start;
+	}
+	&__body {
+		display: flex;
+		flex-direction: column;
+		padding: 0px 0px 0px 23px;
+	}
+	&__title {
+		font-weight: 900;
+		font-size: 19px;
+		line-height: 1.37;
+		color: #F2726F;
+		&:not(:last-child) {
+			margin: 0px 0px 20px 0px;
+		}
+	}
+	&__text {
+		letter-spacing: 0.15px;
+		line-height: 1.5;
+		color: #4B4B4B;
+	}
+}
